@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rinaldy.restauranthygienechecker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_food"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_food"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewActivity" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="Search Result"
+            android:parentActivityName=".ViewActivity" />
+        <activity
+            android:name=".AdvancedSearchActivity"
+            android:label="@string/adv_search"
+            android:parentActivityName=".SearchActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About"
+            android:theme="@style/AppTheme.About" />
+        <activity
+            android:name=".EstablishmentDetail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DetailMapActivity"
+            android:theme="@style/AppTheme"/>
+    </application>
+
+</manifest>

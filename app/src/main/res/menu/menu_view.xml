@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.rinaldy.restauranthygienechecker.ViewActivity">
+    <item
+        android:id="@+id/search"
+        android:title="@string/icon_search"
+        android:orderInCategory="100"
+        android:icon="@drawable/icon_search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="101"
+        android:title="@string/about"
+        android:icon="@drawable/icon_about"
+        app:showAsAction="never" />
+</menu>

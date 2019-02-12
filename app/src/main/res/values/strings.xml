@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Restaurant Hygiene Checker</string>
+    <string name="title_activity_view">Search</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+    <string name="about">About</string>
+    <string name="title_activity_about">About</string>
+
+    <string-array name="search_sort_options">
+        <item>Name</item>
+        <item>Distance</item>
+        <item>Rating</item>
+        <item>Date Awarded</item>
+    </string-array>
+
+    <string-array name="search_sort_order">
+        <item>Asc</item>
+        <item>Desc</item>
+    </string-array>
+
+    <string-array name="adv_search_str_rating">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="adv_search_rating_comp">
+        <item>Equal</item>
+        <item>LessThanOrEqual</item>
+        <item>GreaterThanOrEqual</item>
+    </string-array>
+
+    <string name="about_text">
+"This app is for Mobile &amp; Ubiquitous Computing Assignment 3.
+You can use this app to check the hygiene ratings for restaurants around the UK.
+
+<b>Features</b>:
+- Supports all features asked by the assignment.
+- Information is shown in a listview initially, then a mapview in the second tab.
+- Toggleable filtering options on the top right corner of listview:
+  a. List is filterable by typing in the search bar. Resets on X.
+  b. List is sortable by clicking the sort icon, choose the options, then click the arrow to sort.
+- Each page has 30 items and page navigation buttons at the <i>bottom of list</i>. Please use this. This design sacrifices the ability to obtain all results for speed and storage.
+- MapMarkers window clickable, leading to specific establishment details page.
+- Go to <u>simple search</u> by clicking top right search icon.
+- Go to <u>local search</u> by opening app, or <i>NEAR MY CURRENT LOCATION</i> button in simple search.
+- Go to <u>advance search</u> by clicking button at bottom of simple search activity.
+
+<b>Design</b>:
+- Intended to be intuitive and aesthetically pleasing.
+- App is highly robust and dynamic.
+
+<b>Additional Features</b>:
+- Also supports location permissions behaviors when used by android 6.0+.
+- Responsive depending on whether device location is on or off. Evident on app launch:
+  a. If location permission is granted, then search by nearest location.
+  b. If not then go to simple search.
+(Reason? The most probable reason for opening this app is to check the hygiene of restaurants you are about to visit.)
+- Able to share business detail.
+- Attempt to be efficient with singleton RequestQueue and GSON classes.
+- MapMarkers are color coded according to its business types:
+    GREEN : Restaurants &amp; Takeaways &amp; Pub/Bar
+    MAGENTA : Distributors
+    ORANGE : Farmers
+    ROSE : Hospitals
+    AZURE : Hotels
+    VIOLET : Manufactures &amp; Import/Export
+    YELLOW : Mobile Catering &amp; Other Catering
+    CYAN :  Retailers - Supermarket &amp; Retailers - Other
+    BLUE : Schools and University
+    RED : ERROR
+
+<b>Sources:</b>
+- Uses GSON from Google, to parse JSON.
+- Maps features borrowed from Google.
+- Uses the FSA API and its official images.
+
+"
+    </string>
+    <string name="adv_search_label_instruction">Fill in one or more fields to filter</string>
+    <string name="adv_search_label_miles">miles</string>
+    <string name="adv_search_label_location">Location</string>
+    <string name="adv_search_label_clear">Clear</string>
+    <string name="adv_search_label_search">Search</string>
+    <string name="adv_search_label_range">Within</string>
+    <string name="adv_search_label_authority">Authority</string>
+    <string name="adv_search_label_region">Region</string>
+    <string name="adv_search_label_place">Place</string>
+    <string name="adv_search_label_rating">Hygiene Rating</string>
+    <string name="adv_search_label_type">Type</string>
+    <string name="adv_search_label_name">Name</string>
+    <string name="adv_search_label_business">Business</string>
+    <string name="adv_search_hint_place">Enter an address or post code</string>
+    <string name="adv_search_hint_name">Enter a business name</string>
+    <string name="adv_search">Advanced Search</string>
+    <string name="icon_search">Search</string>
+    <string name="icon_help">Help</string>
+    <string name="share">Share</string>
+</resources>
